@@ -1,38 +1,208 @@
-$container-small: 320px;
-$container-medium: 425px;
-$container-large: 1024px;
-$container-xl: 1366px;
-$container-xxl: 1536px;
-$container-xxxl: 1920px;
+// Using wrapper class to set containers size e.g <div class="wrapper-medium">
 
-.container {
+$wrapper-small: 320px;
+$wrapper-medium: 425px;
+$wrapper-large: 1024px;
+$wrapper-xl: 1366px;
+$wrapper-xxl: 1536px;
+$wrapper-xxxl: 1920px;
+
+.wrapper {
     width:100%;
 
     &-fullwidth {
         max-width:100%;
 
         @include media("<=phone") {
-            max-width: $container-small;
+            max-width: 100%;
         }
 
         @include media ('>phone', '<=largephone') {
-            max-width: $container-medium;   
+            max-width: 100%;
         }
 
         @include media ('>largephone', 'tablet') {
-            max-width: $container-large;
+            max-width: 100%;
         }
 
         @include media ('>tablet', 'desktop') {
-            max-width: $container-xl;
+            max-width: 100%;
         }
 
         @include media ('>desktop', 'mediumdesktop') {
-            max-width: $container-xxl;
+            max-width: 100%;
         }
 
         @include media ('>mediumdesktop', 'largedesktop') {
-            max-width: $container-xxxl;
+            max-width: 100%;
+        }
+    }
+
+    &-xxxl {
+        max-width: $wrapper-xxxl;
+
+        @include media("<=phone") {
+            max-width: 100%;
+        }
+
+        @include media ('>phone', '<=largephone') {
+            max-width: 100%;
+        }
+
+        @include media ('>largephone', 'tablet') {
+            max-width: 100%;
+        }
+
+        @include media ('>tablet', 'desktop') {
+            max-width: 100%;
+        }
+
+        @include media ('>desktop', 'mediumdesktop') {
+            max-width: 100%;
+        }
+
+        @include media ('>mediumdesktop', 'largedesktop') {
+            max-width: $wrapper-xxxl;
+        }
+    }
+
+    &-xxl {
+        max-width: $wrapper-xxl;
+
+        @include media("<=phone") {
+            max-width: 100%;
+        }
+
+        @include media ('>phone', '<=largephone') {
+            max-width: 100%;
+        }
+
+        @include media ('>largephone', 'tablet') {
+            max-width: 100%;
+        }
+
+        @include media ('>tablet', 'desktop') {
+            max-width: 100%;
+        }
+
+        @include media ('>desktop', 'mediumdesktop') {
+            max-width: $wrapper-xxl;
+        }
+
+        @include media ('>mediumdesktop', 'largedesktop') {
+            max-width: $wrapper-xxxl;
+        }
+    }
+
+    &-xl {
+        max-width: $wrapper-xl;
+
+        @include media("<=phone") {
+            max-width: 100%;
+        }
+
+        @include media ('>phone', '<=largephone') {
+            max-width: 100%;
+        }
+
+        @include media ('>largephone', 'tablet') {
+            max-width: 100%;
+        }
+
+        @include media ('>tablet', 'desktop') {
+            max-width: $wrapper-xl;
+        }
+
+        @include media ('>desktop', 'mediumdesktop') {
+            max-width: $wrapper-xxl;
+        }
+
+        @include media ('>mediumdesktop', 'largedesktop') {
+            max-width: $wrapper-xxxl;
+        }
+    }
+
+    &-large {
+        max-width: $wrapper-large;
+
+        @include media("<=phone") {
+            max-width: 100%;
+        }
+
+        @include media ('>phone', '<=largephone') {
+            max-width: 100%;
+        }
+
+        @include media ('>largephone', 'tablet') {
+            max-width: $wrapper-large;
+        }
+
+        @include media ('>tablet', 'desktop') {
+            max-width: $wrapper-xl;
+        }
+
+        @include media ('>desktop', 'mediumdesktop') {
+            max-width: $wrapper-xxl;
+        }
+
+        @include media ('>mediumdesktop', 'largedesktop') {
+            max-width: $wrapper-xxxl;
+        }
+    }
+
+    &-medium {
+        max-width: $wrapper-medium;
+
+        @include media("<=phone") {
+            max-width: 100%;
+        }
+
+        @include media ('>phone', '<=largephone') {
+            max-width: $wrapper-medium;
+        }
+
+        @include media ('>largephone', 'tablet') {
+            max-width: $wrapper-large;
+        }
+
+        @include media ('>tablet', 'desktop') {
+            max-width: $wrapper-xl;
+        }
+
+        @include media ('>desktop', 'mediumdesktop') {
+            max-width: $wrapper-xxl;
+        }
+
+        @include media ('>mediumdesktop', 'largedesktop') {
+            max-width: $wrapper-xxxl;
+        }
+    }
+
+    &-small {
+        max-width: $wrapper-small;
+
+        @include media("<=phone") {
+            max-width: $wrapper-small;
+        }
+
+        @include media ('>phone', '<=largephone') {
+            max-width: $wrapper-medium;
+        }
+
+        @include media ('>largephone', 'tablet') {
+            max-width: $wrapper-large;
+        }
+
+        @include media ('>tablet', 'desktop') {
+            max-width: $wrapper-xl;
+        }
+
+        @include media ('>desktop', 'mediumdesktop') {
+            max-width: $wrapper-xxl;
+        }
+
+        @include media ('>mediumdesktop', 'largedesktop') {
+            max-width: $wrapper-xxxl;
         }
     }
 }
