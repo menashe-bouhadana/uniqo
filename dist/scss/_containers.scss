@@ -1,0 +1,35 @@
+$container-small: 540px;
+$container-medium: 720px;
+$container-large: 960px;
+$container-xl: 1140px;
+$container-xxl: 1320px;
+
+.container {
+    width:100%;
+
+    &-fullwidth {
+        max-width:100%;
+    }
+
+    &-xs {
+        max-width: 100%;
+    }
+
+    &-small {
+        @include breakpoints(0px $small) {
+            max-width: $container-small;
+        }
+        @include breakpoints($small $medium) {
+            max-width: 100%;
+        }
+        @include breakpoints($medium $large) {
+            max-width: 100%;
+        }
+        @include breakpoints($large $xl) {
+            max-width: 100%;
+        }
+        @include breakpoints($xl $xxl) {
+            max-width: 100%;
+        }
+    }
+}

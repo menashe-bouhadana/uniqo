@@ -1,8 +1,15 @@
-$breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
+// Global Breakpoints Settings
+
+$xs: 0;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// Usage:
+// @include breakpoints(0px $small) {}
+// @include breakpoints($small $medium) {}
+// @include breakpoints($medium $large) {}
+// @include breakpoints($large $xl) {}
+// @include breakpoints($xl $xxl) {}
