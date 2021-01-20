@@ -1,35 +1,38 @@
-$container-small: 540px;
-$container-medium: 720px;
-$container-large: 960px;
-$container-xl: 1140px;
-$container-xxl: 1320px;
+$container-small: 320px;
+$container-medium: 425px;
+$container-large: 1024px;
+$container-xl: 1366px;
+$container-xxl: 1536px;
+$container-xxxl: 1920px;
 
 .container {
     width:100%;
 
     &-fullwidth {
         max-width:100%;
-    }
 
-    &-xs {
-        max-width: 100%;
-    }
-
-    &-small {
-        @include breakpoints(0px $small) {
+        @include media("<=phone") {
             max-width: $container-small;
         }
-        @include breakpoints($small $medium) {
-            max-width: 100%;
+
+        @include media ('>phone', '<=largephone') {
+            max-width: $container-medium;   
         }
-        @include breakpoints($medium $large) {
-            max-width: 100%;
+
+        @include media ('>largephone', 'tablet') {
+            max-width: $container-large;
         }
-        @include breakpoints($large $xl) {
-            max-width: 100%;
+
+        @include media ('>tablet', 'desktop') {
+            max-width: $container-xl;
         }
-        @include breakpoints($xl $xxl) {
-            max-width: 100%;
+
+        @include media ('>desktop', 'mediumdesktop') {
+            max-width: $container-xxl;
+        }
+
+        @include media ('>mediumdesktop', 'largedesktop') {
+            max-width: $container-xxxl;
         }
     }
 }
