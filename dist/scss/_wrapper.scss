@@ -1,6 +1,7 @@
 .wrapper {
 
     &-small {
+        display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
@@ -19,6 +20,7 @@
         };
     }
     &-medium {
+        display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
@@ -37,6 +39,7 @@
         };
     }
     &-large {
+        display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
@@ -55,6 +58,7 @@
         };
     }
     &-xl {
+        display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
@@ -73,6 +77,7 @@
         };
     }
     &-fullwidth {
+        display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
             width:100%;

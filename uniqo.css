@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html, body {
   height: 100vh;
 }
@@ -7,7 +8,58 @@ html, body {
           box-sizing: border-box;
 }
 
+.primary {
+  color: #00CBCF;
+}
+
+.primary-bg {
+  background: #00CBCF;
+}
+
+.secondary {
+  color: #A663CC;
+}
+
+.secondary-bg {
+  background: #A663CC;
+}
+
+.light {
+  color: #DBD3D8;
+}
+
+.dark {
+  color: #1A1B41;
+}
+
+.light-bg {
+  background: #DBD3D8;
+}
+
+.dark-bg {
+  background: #1A1B41;
+}
+
+.info {
+  background: #7A6563;
+}
+
+.warning {
+  background: #F0C808;
+}
+
+.success {
+  background: #41C546;
+}
+
+.error {
+  background: #DD1C1A;
+}
+
 .wrapper-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
 }
 
@@ -42,6 +94,9 @@ html, body {
 }
 
 .wrapper-medium {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
 }
 
@@ -76,6 +131,9 @@ html, body {
 }
 
 .wrapper-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
 }
 
@@ -110,6 +168,9 @@ html, body {
 }
 
 .wrapper-xl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
 }
 
@@ -144,6 +205,9 @@ html, body {
 }
 
 .wrapper-fullwidth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
 }
 
@@ -175,5 +239,134 @@ html, body {
   .wrapper-fullwidth {
     width: 100%;
   }
+}
+
+.column {
+  width: calc(100% / 1);
+}
+
+.column-2 {
+  width: calc(100% / 2);
+}
+
+.column-3 {
+  width: calc(100% / 3);
+}
+
+.column-4 {
+  width: calc(100% / 4);
+}
+
+.column-5 {
+  width: calc(100% / 5);
+}
+
+.column-6 {
+  width: calc(100% / 6);
+}
+
+body,
+h1, h2, h3, h4, h5, h6, p, button, blockquote, figcaption, span {
+  font-family: 'Poppins',sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1.7rem;
+}
+
+blockquote {
+  font-size: 1.4rem;
+}
+
+figcaption {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.w-100 {
+  font-weight: 100;
+}
+
+.w-200 {
+  font-weight: 200;
+}
+
+.w-300 {
+  font-weight: 300;
+}
+
+.w-400 {
+  font-weight: 400;
+}
+
+.w-500 {
+  font-weight: 500;
+}
+
+.w-600 {
+  font-weight: 600;
+}
+
+.w-700 {
+  font-weight: 700;
+}
+
+.w-800 {
+  font-weight: 800;
+}
+
+.w-900 {
+  font-weight: 900;
 }
 /*# sourceMappingURL=uniqo.css.map */

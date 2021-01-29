@@ -1,3 +1,5 @@
+// Set Global Colors
+
 $primary: #00CBCF;
 $secondary: #A663CC;
 $info: #7A6563;
@@ -6,3 +8,53 @@ $success: #41C546;
 $error: #DD1C1A;
 $light: #DBD3D8;
 $dark: #1A1B41;
+
+// Set Color Classes
+
+.primary {
+    color:$primary;
+}
+
+.primary-bg {
+    background:$primary;
+}
+
+.secondary {
+    color:$secondary;
+}
+
+.secondary-bg {
+    background:$secondary;
+}
+
+.light {
+    color: $light;
+}
+
+.dark {
+    color: $dark;
+}
+
+.light-bg {
+    background: $light;
+}
+
+.dark-bg {
+    background: $dark;
+}
+
+.info {
+    background:$info;
+}
+
+.warning {
+    background: $warning;
+}
+
+.success {
+    background: $success;
+}
+
+.error {
+    background: $error;
+}

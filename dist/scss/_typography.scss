@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body,
+h1,h2,h3,h4,h5,h6,p,button,blockquote,figcaption,span {
+    font-family: 'Poppins',sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.7rem;
+}
+
+blockquote {
+    font-size: 1.4rem;
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
+span {
+    font-size: 1rem;
+}
+
+// Alignments
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// Proporties
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+// Weights
+
+.w-100 {
+    font-weight:100;
+}
+
+.w-200 {
+    font-weight:200;
+}
+
+.w-300 {
+    font-weight:300;
+}
+
+.w-400 {
+    font-weight:400;
+}
+
+.w-500 {
+    font-weight:500;
+}
+
+.w-600 {
+    font-weight:600;
+}
+
+.w-700 {
+    font-weight:700;
+}
+
+.w-800 {
+    font-weight:800;
+}
+
+.w-900 {
+    font-weight:900;
+}
