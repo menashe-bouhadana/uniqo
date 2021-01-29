@@ -1,0 +1,93 @@
+.wrapper {
+
+    &-small {
+        height: 100%;
+        @media screen and (max-width: $phone) {
+            width:$phone;
+        };
+        @media screen and (min-width: $phone) and (max-width: $tablet) {
+            width:100%;
+        };
+        @media screen and (min-width: $tablet) and (max-width: $desktop-small) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-large) {
+            width:100%;
+        };
+    }
+    &-medium {
+        height: 100%;
+        @media screen and (max-width: $phone) {
+            width:$phone;
+        };
+        @media screen and (min-width: $phone) and (max-width: $tablet) {
+            width:$tablet;
+        };
+        @media screen and (min-width: $tablet) and (max-width: $desktop-small) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-large) {
+            width:100%;
+        };
+    }
+    &-large {
+        height: 100%;
+        @media screen and (max-width: $phone) {
+            width:$phone;
+        };
+        @media screen and (min-width: $phone) and (max-width: $tablet) {
+            width:$tablet;
+        };
+        @media screen and (min-width: $tablet) and (max-width: $desktop-small) {
+            width:$desktop-small;
+        };
+        @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-large) {
+            width:100%;
+        };
+    }
+    &-xl {
+        height: 100%;
+        @media screen and (max-width: $phone) {
+            width:$phone;
+        };
+        @media screen and (min-width: $phone) and (max-width: $tablet) {
+            width:$tablet;
+        };
+        @media screen and (min-width: $tablet) and (max-width: $desktop-small) {
+            width:$desktop-small;
+        };
+        @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
+            width:$desktop-large;
+        };
+        @media screen and (min-width: $desktop-large) {
+            width:100%;
+        };
+    }
+    &-fullwidth {
+        height: 100%;
+        @media screen and (max-width: $phone) {
+            width:100%;
+        };
+        @media screen and (min-width: $phone) and (max-width: $tablet) {
+            width:100%;
+        };
+        @media screen and (min-width: $tablet) and (max-width: $desktop-small) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-large) {
+            width:100%;
+        };
+    }
+}
