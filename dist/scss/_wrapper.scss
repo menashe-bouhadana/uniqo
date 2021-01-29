@@ -5,6 +5,7 @@
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
+            flex-direction: column;
         };
         @media screen and (min-width: $phone) and (max-width: $tablet) {
             width:100%;
@@ -24,6 +25,7 @@
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
+            flex-direction: column;
         };
         @media screen and (min-width: $phone) and (max-width: $tablet) {
             width:$tablet;
@@ -43,6 +45,7 @@
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
+            flex-direction: column;
         };
         @media screen and (min-width: $phone) and (max-width: $tablet) {
             width:$tablet;
@@ -62,6 +65,7 @@
         height: 100%;
         @media screen and (max-width: $phone) {
             width:$phone;
+            flex-direction: column;
         };
         @media screen and (min-width: $phone) and (max-width: $tablet) {
             width:$tablet;
@@ -81,6 +85,7 @@
         height: 100%;
         @media screen and (max-width: $phone) {
             width:100%;
+            flex-direction: column;
         };
         @media screen and (min-width: $phone) and (max-width: $tablet) {
             width:100%;

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-html, body {
-  height: 100vh;
+body {
+  margin: auto;
 }
 
 *, *::before, *::after {
@@ -66,6 +66,10 @@ html, body {
 @media screen and (max-width: 576px) {
   .wrapper-small {
     width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -103,6 +107,10 @@ html, body {
 @media screen and (max-width: 576px) {
   .wrapper-medium {
     width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -140,6 +148,10 @@ html, body {
 @media screen and (max-width: 576px) {
   .wrapper-large {
     width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -177,6 +189,10 @@ html, body {
 @media screen and (max-width: 576px) {
   .wrapper-xl {
     width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -214,6 +230,10 @@ html, body {
 @media screen and (max-width: 576px) {
   .wrapper-fullwidth {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -245,24 +265,60 @@ html, body {
   width: calc(100% / 1);
 }
 
+@media screen and (max-width: 576px) {
+  .column {
+    width: 100%;
+  }
+}
+
 .column-2 {
   width: calc(100% / 2);
+}
+
+@media screen and (max-width: 576px) {
+  .column-2 {
+    width: 100%;
+  }
 }
 
 .column-3 {
   width: calc(100% / 3);
 }
 
+@media screen and (max-width: 576px) {
+  .column-3 {
+    width: 100%;
+  }
+}
+
 .column-4 {
   width: calc(100% / 4);
+}
+
+@media screen and (max-width: 576px) {
+  .column-4 {
+    width: 100%;
+  }
 }
 
 .column-5 {
   width: calc(100% / 5);
 }
 
+@media screen and (max-width: 576px) {
+  .column-5 {
+    width: 100%;
+  }
+}
+
 .column-6 {
   width: calc(100% / 6);
+}
+
+@media screen and (max-width: 576px) {
+  .column-6 {
+    width: 100%;
+  }
 }
 
 body,
