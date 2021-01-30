@@ -1,0 +1,13 @@
+// set image sizes
+
+.image-thumbnail {
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+
+.image-responsive {
+    max-width: 100%;
+    height:auto;
+    object-fit: cover;
+}
