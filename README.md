@@ -19,3 +19,12 @@
   ·
   <a href="https://getuniqo.com/">Get Uniqo</a>
 </p>
+
+## UNIQO
+
+UNIQO is in the early stages of its development. make sure to use it wisely!
+
+## Get Started
+
+- [Download the latest release](https://github.com/menashe-bouhadana/uniqo/archive/v0.3-alpha.zip)
+- Clone the repo: `git clone https://github.com/menashe-bouhadana/uniqo.git`
