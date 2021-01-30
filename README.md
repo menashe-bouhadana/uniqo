@@ -13,9 +13,9 @@
 </p>
 <p align="center">
 <br>
-  <a href="#">Report a bug</a>
+  <a href="https://github.com/menashe-bouhadana/uniqo/issues/new/bug_report.md">Report a bug</a>
   ·
-  <a href="#">Feature request</a>
+  <a href="https://github.com/menashe-bouhadana/uniqo/issues/new/feature_request.md">Feature request</a>
   ·
   <a href="https://getuniqo.com/">Get Uniqo</a>
 </p>
