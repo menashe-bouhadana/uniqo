@@ -1,0 +1,99 @@
+@mixin btn($color, $text-color, $outline:false) {
+    background:$color;
+    $color: $text-color;
+    border-radius:5px;
+
+    @if $outline {
+        background: transparent;
+        border:1px solid $color;
+        color:$color;
+        border-radius:5px;
+    }
+}
+
+.button {
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    width:120px;
+    outline: 0;
+    font-size:18px;
+    height:40px;
+    transition: box-shadow .4s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+    }
+
+    &-small {
+        width:120px;
+        height:40px;
+    }
+
+    &-medium {
+        width:150px;
+        height:50px;
+    }
+
+    &-large {
+        width:180px;
+        height:65px;
+    }
+
+    &-primary {
+        @include btn($primary, $dark);
+
+        &-outline {
+            @include btn($primary, $primary, true);
+        }
+    }
+    &-secondary {
+        @include btn($secondary, $dark);
+
+        &-outline {
+            @include btn($secondary, $secondary, true);
+        }
+    }
+    &-info {
+        @include btn($info, $dark);
+
+        &-outline {
+            @include btn($info, $dark, true);
+        }
+    }
+    &-warning {
+        @include btn($warning, $dark);
+
+        &-outline {
+            @include btn($warning, $dark, true);
+        }
+    }
+    &-error {
+        @include btn($error, $dark);
+
+        &-outline {
+            @include btn($error, $dark, true);
+        }
+    }
+    &-success {
+        @include btn($success, $dark);
+
+        &-outline {
+            @include btn($success, $dark, true);
+        }
+    }
+    &-dark {
+        @include btn($dark, $light);
+
+        &-outline {
+            @include btn($dark, $dark, true);
+        }
+    }
+    &-light {
+        @include btn($light, $dark);
+
+        &-outline {
+            @include btn($light, $dark, true);
+        }
+    }
+}
