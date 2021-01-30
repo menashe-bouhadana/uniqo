@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body,
-h1,h2,h3,h4,h5,h6,p,button,blockquote,figcaption,span {
+h1,h2,h3,h4,h5,h6,p,button,blockquote,figcaption,span,input, label {
     font-family: 'Poppins',sans-serif;
 }
 
@@ -46,6 +46,10 @@ figcaption {
 }
 
 span {
+    font-size: 1rem;
+}
+
+label {
     font-size: 1rem;
 }
 

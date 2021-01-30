@@ -1,3 +1,9 @@
+/* 
+UNIQO UI KIt
+Version: v0.3-alpha
+
+Get UNIQO now: https://getuniqo.com
+*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -8,7 +14,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -464,7 +469,7 @@ a {
 }
 
 body,
-h1, h2, h3, h4, h5, h6, p, button, blockquote, figcaption, span {
+h1, h2, h3, h4, h5, h6, p, button, blockquote, figcaption, span, input, label {
   font-family: 'Poppins',sans-serif;
 }
 
@@ -509,6 +514,10 @@ figcaption {
 }
 
 span {
+  font-size: 1rem;
+}
+
+label {
   font-size: 1rem;
 }
 
@@ -729,5 +738,55 @@ span {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+input, select, textarea {
+  background: white;
+  padding: 3px;
+  border: 1px solid #1A1B41;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  color: #1A1B41;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 1px solid #4648ae;
+}
+
+.input-20 {
+  margin-left: 2%;
+  width: calc((100% - 10%) / 5);
+}
+
+.input-25 {
+  margin-left: 2%;
+  width: calc((100% - 8%) / 4);
+}
+
+.input-33 {
+  margin-left: 2%;
+  width: calc((100% - 6%) / 3);
+}
+
+.input-50 {
+  margin-left: 2%;
+  width: calc((100% - 4%) / 2);
+}
+
+.input-100 {
+  width: 100%;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=uniqo.css.map */
