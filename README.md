@@ -11,6 +11,7 @@
   <br>
   <a href="https://getuniqo.com/docs/"><strong>Explore UNIQO docs »</strong></a>
 </p>
+<p align="center">
 <br>
 <br>
   <a href="#">Report a bug</a>
