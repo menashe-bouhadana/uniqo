@@ -11,3 +11,11 @@
   <br>
   <a href="https://getuniqo.com/docs/"><strong>Explore UNIQO docs »</strong></a>
 </p>
+<br>
+<br>
+  <a href="#">Report a bug</a>
+  ·
+  <a href="#">Feature request</a>
+  ·
+  <a href="https://getuniqo.com/">Get Uniqo</a>
+</p>
