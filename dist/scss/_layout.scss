@@ -193,6 +193,10 @@ $grid: 1408px;
             flex-direction: column;
         }
 
+        &-center {
+            justify-content: center;
+        }
+
         &-align {
             align-items: center;
         }

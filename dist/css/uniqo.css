@@ -1,6 +1,6 @@
 /* 
 UNIQO UI KIt
-Version: v0.4-alpha
+Version: v0.4.1-alpha
 
 Get UNIQO now: https://getuniqo.com
 */
@@ -664,6 +664,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.d-flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .d-flex-align {
