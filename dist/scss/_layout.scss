@@ -1,3 +1,12 @@
+// Grid 
+
+// Set grid width
+$grid: 1408px;
+
+.grid {
+    width:1408px;
+}
+
 // One Column
 .column {
     width: calc(100% / 1);
@@ -159,4 +168,45 @@
 
 .solid-light {
     border:1px solid $light;
+}
+
+// Displays
+
+.d {
+
+    &-block {
+        display: block;
+    }
+
+    &-inline {
+        display: inline;
+    }
+
+    &-flex {
+        display: flex;
+
+        &-row {
+            flex-direction: row;
+        }
+
+        &-column {
+            flex-direction: column;
+        }
+
+        &-align {
+            align-items: center;
+        }
+
+        &-evenly {
+            justify-content: space-evenly;
+        }
+
+        &-around {
+            justify-content: space-around;
+        }
+
+        &-between {
+            justify-content: space-between;
+        }
+    }
 }
