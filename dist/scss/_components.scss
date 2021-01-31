@@ -1,1 +1,50 @@
 // Tooltips
+
+@mixin tooltips($translateX, $translateY, $top, $left, $background) {
+    &::before {
+        transform: $translateX $translateY;
+        top:$top;
+        left:$left;
+        $background:$background;
+    }
+}
+
+*[data-tooltip] {
+    position:relative;
+
+    &::before {
+        content: attr(data-tooltip);
+        font-size:1rem;
+        width:120px;
+        color:#ffffff;
+        border-radius:5px;
+        position: absolute;
+        transform: translate(-50%, -50%) scale(0);
+        transition:
+        visibility 400ms,
+        opacity 400ms,
+        transform 400ms;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &:hover {
+		&::before {
+			visibility: visible;
+			opacity: 1;
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+    
+    &[data-tooltip-top="center"] { 
+        @include tooltips(center, bottom, -60%, 50%, $info);
+        }
+    &[data-tooltip-direction="right"] {
+        @include tooltips(right, bottom, -60%, 75%, $info);
+        }
+    &[data-tooltip-direction="left"] {
+        @include tooltips(left, bottom, -60%, 25%, $info);
+        }
+
+}
