@@ -1,6 +1,6 @@
 /* 
 UNIQO UI KIt
-Version: v0.3-alpha
+Version: v0.4-alpha
 
 Get UNIQO now: https://getuniqo.com
 */
@@ -111,6 +111,59 @@ a {
   background: #DD1C1A;
 }
 
+.wrapper-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper-mini {
+    width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .wrapper-mini {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper-mini {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .wrapper-mini {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .wrapper-mini {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper-mini {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper-mini {
+    width: 100%;
+  }
+}
+
 .wrapper-small {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +183,7 @@ a {
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .wrapper-small {
-    width: 100%;
+    width: 768px;
   }
 }
 
@@ -146,7 +199,19 @@ a {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .wrapper-small {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper-small {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
   .wrapper-small {
     width: 100%;
   }
@@ -177,7 +242,7 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .wrapper-medium {
-    width: 100%;
+    width: 1024px;
   }
 }
 
@@ -187,7 +252,19 @@ a {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .wrapper-medium {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper-medium {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
   .wrapper-medium {
     width: 100%;
   }
@@ -224,11 +301,23 @@ a {
 
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .wrapper-large {
+    width: 1400px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .wrapper-large {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper-large {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
   .wrapper-large {
     width: 100%;
   }
@@ -269,8 +358,73 @@ a {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
   .wrapper-xl {
+    width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper-xl {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper-xl {
+    width: 100%;
+  }
+}
+
+.wrapper-xxl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper-xxl {
+    width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .wrapper-xxl {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper-xxl {
+    width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .wrapper-xxl {
+    width: 1400px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .wrapper-xxl {
+    width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper-xxl {
+    width: 1920px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper-xxl {
     width: 100%;
   }
 }
@@ -310,7 +464,19 @@ a {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .wrapper-fullwidth {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .wrapper-fullwidth {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
   .wrapper-fullwidth {
     width: 100%;
   }
