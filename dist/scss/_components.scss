@@ -49,3 +49,334 @@
       @include tooltip(left, bottom, -60%, 25%);
     }
   }
+
+  // Badges
+
+  .badge {
+    border-radius:5px;
+    display: inline-block;
+    font-size: 0.75rem;
+    color:#ffffff;
+    text-align: center;
+    white-space: nowrap;
+
+    &-primary {
+      background:$primary;
+    }
+
+    &-secondary {
+      background:$secondary;
+    }
+
+    &-info {
+      background:$info;
+    }
+
+    &-warning {
+      background:$warning;
+    }
+
+    &-error {
+      background:$error;
+    }
+
+    &-success {
+      background:$success;
+    }
+
+    &-dark {
+      background:$dark;
+    }
+
+    &-light {
+      $background:$light;
+      $color:$dark;
+    }
+  }
+
+  // Nav
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    &-link {
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+
+  // Shadow Classes
+  // Based on Menashe Bouhadana Dropper Shadow Kit Library: https://github.com/menashe-bouhadana/dropper-ui
+
+  @mixin shadow($horizontal, $vertical, $blur,  $alpha) {
+    box-shadow: $horizontal +px $vertical +px $blur +px -3px rgba(0,0,0, $alpha);
+
+    &:hover {
+        box-shadow: #{$horizontal * 1.2} +px #{$vertical * 1.5} +px #{$blur * 1.5} +px rgba(0,0,0, $alpha);
+    }
+}
+
+.shadow {
+	&-light {
+		&-close {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 5, 15, 0.08);
+		}
+		&-medium {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 8, 13, 0.08);
+		}
+		&-far {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 12, 15, 0.08);
+		}
+		&-far2x {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 15, 18, 0.08);
+		}
+	}
+
+	&-regular {
+		&-close {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 7, 17, 0.12);
+		}
+		&-medium {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 11, 20, 0.12);
+		}
+		&-far {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 15, 24, 0.12);
+		}
+		&-far2x {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(0, 17, 27, 0.12);
+		}
+	}
+	&-semi {
+		&-close {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 7, 17, 0.17);
+		}
+		&-medium {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 11, 20, 0.17);
+		}
+		&-far {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 15, 24, 0.17);
+		}
+		&-far2x {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 17, 27, 0.17);
+		}
+	}
+
+	&-bold {
+		&-close {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 7, 17, 0.24);
+		}
+		&-medium {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 11, 20, 0.24);
+		}
+		&-far {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 15, 24, 0.24);
+		}
+		&-far2x {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(0, 17, 27, 0.24);
+		}
+	}
+}
+
+.shadow-left {
+	&-light {
+		&-close {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(10, 5, 15, 0.08);
+		}
+		&-medium {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(10, 8, 13, 0.08);
+		}
+		&-far {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(10, 12, 15, 0.08);
+		}
+		&-far2x {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(10, 15, 18, 0.08);
+		}
+	}
+
+	&-regular {
+		&-close {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(12, 7, 17, 0.12);
+		}
+		&-medium {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(12, 11, 20, 0.12);
+		}
+		&-far {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(12, 15, 24, 0.12);
+		}
+		&-far2x {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(12, 17, 27, 0.12);
+		}
+	}
+	&-semi {
+		&-close {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 7, 17, 0.17);
+		}
+		&-medium {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 11, 20, 0.17);
+		}
+		&-far {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 15, 24, 0.17);
+		}
+		&-far2x {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 17, 27, 0.17);
+		}
+	}
+
+	&-bold {
+		&-close {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 7, 17, 0.24);
+		}
+		&-medium {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 11, 20, 0.24);
+		}
+		&-far {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 15, 24, 0.24);
+		}
+		&-far2x {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(14, 17, 27, 0.24);
+		}
+	}
+}
+
+.shadow-right {
+	&-light {
+		&-close {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-10, 5, 15, 0.08);
+		}
+		&-medium {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-10, 8, 13, 0.08);
+		}
+		&-far {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-10, 12, 15, 0.08);
+		}
+		&-far2x {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-10, 15, 18, 0.08);
+		}
+	}
+
+	&-regular {
+		&-close {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-12, 7, 17, 0.12);
+		}
+		&-medium {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-12, 11, 20, 0.12);
+		}
+		&-far {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-12, 15, 24, 0.12);
+		}
+		&-far2x {
+			transition: box-shadow 0.4s ease-in-out;
+			@include shadow(-12, 17, 27, 0.12);
+		}
+	}
+	&-semi {
+		&-close {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 7, 17, 0.17);
+		}
+		&-medium {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 11, 20, 0.17);
+		}
+		&-far {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 15, 24, 0.17);
+		}
+		&-far2x {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 17, 27, 0.17);
+		}
+	}
+
+	&-bold {
+		&-close {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 7, 17, 0.24);
+		}
+		&-medium {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 11, 20, 0.24);
+		}
+		&-far {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 15, 24, 0.24);
+		}
+		&-far2x {
+			transition: box-shadow 0.6s ease-in-out;
+			@include shadow(-14, 17, 27, 0.24);
+		}
+	}
+}
+
+// Visibillities
+
+.visible {
+  &-hidden {
+    visibility: hidden;
+  }
+
+  &-visible {
+    visibility: visible;
+  }
+}
+
+// Overflows
+
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
+
+  &-scroll {
+    overflow: scroll;
+  }
+
+  &-visible {
+    overflow: visible;
+  }
+
+  &-auto {
+    overflow: auto;
+  }
+}
