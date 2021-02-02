@@ -1,6 +1,6 @@
 /* 
 UNIQO UI KIt
-Version: v0.4.1-alpha
+Version: v0.5.1-alpha
 
 Get UNIQO now: https://getuniqo.com
 */
@@ -546,6 +546,34 @@ a {
   }
 }
 
+.height-10 {
+  height: 10%;
+}
+
+.height-20 {
+  height: 20%;
+}
+
+.height-25 {
+  height: 25%;
+}
+
+.height-50 {
+  height: 50%;
+}
+
+.height-75 {
+  height: 75%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.height-auto {
+  height: auto;
+}
+
 .pl-10 {
   padding-left: 10px;
 }
@@ -693,6 +721,39 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-static {
+  position: static;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-none {
+  float: none;
 }
 
 body,
@@ -850,9 +911,15 @@ label {
   background: #00CBCF;
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #00CBCF;
-  color: #00CBCF;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   border-radius: 5px;
+}
+
+.button-primary-outline:hover {
+  background: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button-secondary {
@@ -864,9 +931,15 @@ label {
   background: #A663CC;
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #A663CC;
-  color: #A663CC;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   border-radius: 5px;
+}
+
+.button-secondary-outline:hover {
+  background: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button-info {
@@ -883,6 +956,12 @@ label {
   border-radius: 5px;
 }
 
+.button-info-outline:hover {
+  background: #1A1B41;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .button-warning {
   background: #F0C808;
   border-radius: 5px;
@@ -895,6 +974,12 @@ label {
   border: 1px solid #1A1B41;
   color: #1A1B41;
   border-radius: 5px;
+}
+
+.button-warning-outline:hover {
+  background: #1A1B41;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button-error {
@@ -911,6 +996,12 @@ label {
   border-radius: 5px;
 }
 
+.button-error-outline:hover {
+  background: #1A1B41;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .button-success {
   background: #41C546;
   border-radius: 5px;
@@ -925,6 +1016,12 @@ label {
   border-radius: 5px;
 }
 
+.button-success-outline:hover {
+  background: #1A1B41;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .button-dark {
   background: #1A1B41;
   border-radius: 5px;
@@ -934,9 +1031,15 @@ label {
   background: #1A1B41;
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #1A1B41;
-  color: #1A1B41;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   border-radius: 5px;
+}
+
+.button-dark-outline:hover {
+  background: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button-light {
@@ -951,6 +1054,12 @@ label {
   border: 1px solid #1A1B41;
   color: #1A1B41;
   border-radius: 5px;
+}
+
+.button-light-outline:hover {
+  background: #1A1B41;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .image-thumbnail {
@@ -1792,5 +1901,29 @@ nav-link {
 .shadow-right-bold-far2x:hover {
   -webkit-box-shadow: -16.8 +px 25.5 +px 40.5 +px rgba(0, 0, 0, 0.24);
           box-shadow: -16.8 +px 25.5 +px 40.5 +px rgba(0, 0, 0, 0.24);
+}
+
+.visible-hidden {
+  visibility: hidden;
+}
+
+.visible-visible {
+  visibility: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 /*# sourceMappingURL=uniqo.css.map */

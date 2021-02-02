@@ -246,3 +246,40 @@ $grid: 1408px;
         }
     }
 }
+
+.position {
+    
+    &-absolute {
+        position: absolute;
+    }
+
+    &-relative {
+        position: relative;
+    }
+
+    &-sticky {
+        position:sticky
+    }
+
+    &-fixed {
+        position:fixed;
+    }
+
+    &-static {
+        position:static;
+    }
+}
+
+.float {
+    &-right {
+        float: right;
+    }
+
+    &-left {
+        float: left;
+    }
+
+    &-none {
+        float: none;
+    }
+}

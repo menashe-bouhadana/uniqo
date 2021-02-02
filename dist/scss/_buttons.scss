@@ -8,6 +8,12 @@
         border:1px solid $color;
         color:$color;
         border-radius:5px;
+
+        &:hover {
+            background:$color;
+            $color:$text-color;
+            box-shadow: none;
+        }
     }
 }
 
@@ -44,14 +50,14 @@
         @include btn($primary, $dark);
 
         &-outline {
-            @include btn($primary, $primary, true);
+            @include btn($primary, #ffffff, true);
         }
     }
     &-secondary {
         @include btn($secondary, $dark);
 
         &-outline {
-            @include btn($secondary, $secondary, true);
+            @include btn($secondary,  #ffffff, true);
         }
     }
     &-info {
@@ -86,7 +92,7 @@
         @include btn($dark, $light);
 
         &-outline {
-            @include btn($dark, $dark, true);
+            @include btn($dark, #ffffff, true);
         }
     }
     &-light {
