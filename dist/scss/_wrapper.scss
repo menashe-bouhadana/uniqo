@@ -1,6 +1,6 @@
-.wrapper {
+.container {
 
-    &-mini {
+    &-sm {
         display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
@@ -26,7 +26,7 @@
             width:100%;
         };
     }
-    &-small {
+    &-md {
         display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
@@ -52,7 +52,7 @@
             width:100%;
         };
     }
-    &-medium {
+    &-lg {
         display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
@@ -67,32 +67,6 @@
         };
         @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
             width:100%;
-        };
-        @media screen and (min-width: $desktop-large) and (max-width:$desktop-xl) {
-            width:100%;
-        };
-        @media screen and (min-width: $desktop-xl) and (max-width: $desktop-xxl) {
-            width:100%;
-        };
-        @media screen and (min-width: $desktop-xxl) {
-            width:100%;
-        };
-    }
-    &-large {
-        display: flex;
-        height: 100%;
-        @media screen and (max-width: $phone) {
-            width:$phone;
-            flex-direction: column;
-        };
-        @media screen and (min-width: $phone) and (max-width: $tablet) {
-            width:$tablet;
-        };
-        @media screen and (min-width: $tablet) and (max-width: $desktop-small) {
-            width:$desktop-small;
-        };
-        @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
-            width:$desktop-large;
         };
         @media screen and (min-width: $desktop-large) and (max-width:$desktop-xl) {
             width:100%;
@@ -121,6 +95,32 @@
             width:$desktop-large;
         };
         @media screen and (min-width: $desktop-large) and (max-width:$desktop-xl) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-xl) and (max-width: $desktop-xxl) {
+            width:100%;
+        };
+        @media screen and (min-width: $desktop-xxl) {
+            width:100%;
+        };
+    }
+    &-2xl {
+        display: flex;
+        height: 100%;
+        @media screen and (max-width: $phone) {
+            width:$phone;
+            flex-direction: column;
+        };
+        @media screen and (min-width: $phone) and (max-width: $tablet) {
+            width:$tablet;
+        };
+        @media screen and (min-width: $tablet) and (max-width: $desktop-small) {
+            width:$desktop-small;
+        };
+        @media screen and (min-width: $desktop-small) and (max-width: $desktop-large) {
+            width:$desktop-large;
+        };
+        @media screen and (min-width: $desktop-large) and (max-width:$desktop-xl) {
             width:$desktop-xl;
         };
         @media screen and (min-width: $desktop-xl) and (max-width: $desktop-xxl) {
@@ -130,7 +130,7 @@
             width:100%;
         };
     }
-    &-xxl {
+    &-3xl {
         display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
@@ -156,7 +156,7 @@
             width:100%;
         };
     }
-    &-fullwidth {
+    &-fw {
         display: flex;
         height: 100%;
         @media screen and (max-width: $phone) {
