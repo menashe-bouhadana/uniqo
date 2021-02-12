@@ -26,5 +26,5 @@ UNIQO is in the early stages of its development. make sure to use it wisely!
 
 ## Get Started
 
-- [Download the latest release](https://github.com/menashe-bouhadana/uniqo/archive/v0.5-alpha.zip)
+- [Download the latest release](https://github.com/menashe-bouhadana/uniqo/archive/v0.6-alpha.zip)
 - Clone the repo: `git clone https://github.com/menashe-bouhadana/uniqo.git`
