@@ -9,13 +9,15 @@
 <p align="center">
   Uniqo is a fully featured UI kit for web developers.
   <br>
-  <a href="https://getuniqo.com/docs/"><strong>Explore UNIQO docs »</strong></a>
+  <a href="https://docs.getuniqo.com/"><strong>Explore UNIQO docs »</strong></a>
 </p>
 <p align="center">
 <br>
   <a href="https://github.com/menashe-bouhadana/uniqo/issues/new?template=bug_report.md">Report a bug</a>
   ·
   <a href="https://github.com/menashe-bouhadana/uniqo/issues/new?template=feature_request.md">Feature request</a>
+   ·
+  <a href="https://www.patreon.com/uniqo">Be a Patreon</a>
   ·
   <a href="https://getuniqo.com/">Get Uniqo</a>
 </p>
